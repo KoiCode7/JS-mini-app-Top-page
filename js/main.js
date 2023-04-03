@@ -1,6 +1,9 @@
 "use strict";
 
 {
+  const images = document.querySelectorAll(".hero img");
+  let currentIndex = 0;
+
   function play() {
     setTimeout(() => {
       images[currentIndex].classList.remove("current");
@@ -13,11 +16,8 @@
       images[currentIndex].classList.add("current");
 
       play();
-    }, 4000);
+    }, 3000);
   }
-
-  const images = document.querySelectorAll(".hero img");
-  let currentIndex = 0;
 
   play();
 }
