@@ -148,6 +148,7 @@ header button {
 .products li img {
   width: 100%;
   display: block;
+  border-radius: 8px;
 }
 
 .products li h2 {
