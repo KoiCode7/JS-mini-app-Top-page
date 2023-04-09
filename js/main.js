@@ -16,7 +16,7 @@
       images[currentIndex].classList.add("current");
 
       play();
-    }, 3000);
+    }, 2500);
   }
 
   play();
