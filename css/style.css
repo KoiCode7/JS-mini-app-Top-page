@@ -36,10 +36,6 @@ img {
   vertical-align: bottom;
 }
 
-.container {
-  margin: 0 16px;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -57,11 +53,6 @@ a:hover {
 }
 
 /* header */
-
-header {
-  padding: 8px 0;
-}
-
 header .container {
   display: flex;
   justify-content: space-between;
@@ -126,6 +117,9 @@ header button {
 }
 
 /* products */
+.products .container {
+  margin: 0 16px;
+}
 
 .products {
   padding: 5% 0;
@@ -192,6 +186,7 @@ footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 16px;
 }
 
 footer small {
@@ -216,15 +211,20 @@ footer li + li {
   .products li {
     width: calc((100% - 16px - 16px) / 3);
   }
+
   .container > h1 {
     font-size: 2rem;
+  }
+
+  header .container h1 {
+    margin-left: 10%;
   }
 }
 
 /* large screen */
 
 @media (min-width: 800px) {
-  .container {
+  .products .container {
     width: calc(100% - 32px);
     margin: 0 auto;
     max-width: 800px;
@@ -240,5 +240,21 @@ footer li + li {
 
   .hero img {
     height: 400px;
+  }
+
+  header .container h1 {
+    margin-left: 19%;
+  }
+}
+
+@media (min-width: 1440px) {
+  header .container h1 {
+    margin-left: 28%;
+  }
+}
+
+@media (min-width: 2560px) {
+  header .container h1 {
+    margin-left: 37%;
   }
 }
